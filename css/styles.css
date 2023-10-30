@@ -141,13 +141,13 @@ address {
   display: none;
 }
 .nav__menu-img-inner {
+  display: flex;
   padding-right: 10px;
 }
 .nav__menu-img-link:not(:last-child) {
   margin-right: 8px;
 }
 .nav__menu-img {
-  vertical-align: middle;
   transition: all 0.5s;
 }
 

@@ -47,13 +47,14 @@
         display: none;
     }
     &-img-inner {
+        display: flex;
         padding-right: 10px;
     }
     &-img-link:not(:last-child) {
         margin-right: 8px;
     }
     &-img {
-        vertical-align: middle;
+        // vertical-align: middle;
         transition: $func-transit;
     }
 }
