@@ -189,9 +189,6 @@ address {
   }
 }
 @media screen and (min-width: 1366px) {
-  .header {
-    padding: 20px 0;
-  }
   .logo {
     margin-right: 344px;
     padding-left: 40px;
@@ -1010,7 +1007,7 @@ address {
     transition: all 0.5s;
   }
   .footer__input:hover {
-    border: 1px solid #310b16;
+    border: 1px solid #440f1e;
   }
   .footer ::placeholder {
     font-size: 20px;
@@ -1020,7 +1017,7 @@ address {
     transition: all 0.5s;
   }
   .footer__input-btn:hover {
-    background: #310b16;
+    background: #440f1e;
   }
   .footer__mail-note {
     display: block;

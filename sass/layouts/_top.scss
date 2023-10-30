@@ -54,7 +54,6 @@
         margin-right: 8px;
     }
     &-img {
-        // vertical-align: middle;
         transition: $func-transit;
     }
 }
@@ -78,7 +77,7 @@
         }
         &-list {
             display: flex;
-            justify-content: space-between; // ?
+            justify-content: space-between;
         }
         &-item-link {
             font-family: 'Inter';
@@ -100,9 +99,6 @@
 
 // For display 1366px
 @media screen and (min-width: 1366px) {
-    .header {
-        padding: 20px 0;
-    }
     .logo {
         margin-right: 344px; // *
         padding-left: 40px;
