@@ -1,0 +1,144 @@
+.reviews {
+    background-color: $accent-bg;
+    padding: 80px 0 0 0;
+    &__title {
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.64px;
+        color: $accent-color;
+        padding: 0 44px;
+    }
+    &__slider {
+        position: relative;
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+    &__slider-client {
+        display: block;
+        position: absolute;
+        transition: transform 0.5s ease;
+        width: 100%;
+        background-color: $accent-bg;
+        &:not(.active) {
+            transform: translateX(-100%);
+        }
+    }
+    &__slider-client-img {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    &__slider-client-text {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.49px;
+        color: $accent-color;
+        padding: 0 22px 22px 22px;
+    }
+}
+
+/* Индикатор состояния слайдера */
+.indicator {
+    position: absolute;
+    bottom: -252px; // *
+    left: 50%;
+    transform: translateX(-50%);
+    &-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $lightgray;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &.active {
+        background-color: $accent-color;
+    }
+}
+
+// For display 640px
+@media (max-width: 639px) {
+    .reviews__slider-arrow-l,
+    .reviews__slider-arrow-r {
+        display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .reviews {
+        padding: 120px 0 0 0;
+        &__title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            padding: 0 120px;
+        }
+        &__slider-client-text {
+            font-size: 16px;
+            letter-spacing: -0.56px;
+            padding: 0 120px 24px 120px;
+        }
+        &__slider {
+            padding: 40px 0 0 0;
+        }
+        &__slider-arrow-l,
+        &__slider-arrow-r {
+            z-index: 1;
+            position: absolute;
+            top: 120px;
+            cursor: pointer;
+        }
+        &__slider-arrow-l {
+            left: 15px;
+        }
+        &__slider-arrow-r {
+            right: 15px;
+        }
+    }
+}
+
+// For display 1366px
+@media (min-width: 1366px) {
+    .reviews {
+        padding: 150px 0 0 0;
+        &__title {
+            font-size: 64px;
+            letter-spacing: -1.28px;
+            padding: 0 280px;
+        }
+        &__slider-client-img {
+            margin-bottom: 30px;
+        }
+        &__slider-client-text {
+            font-size: 20px;
+            letter-spacing: -0.7px;
+            padding: 0 270px 38px 270px;
+        }
+        &__slider {
+            padding: 80px 0 0 0;
+        }
+        &__slider-arrow-l,
+        &__slider-arrow-r {
+            top: 150px;
+        }
+        &__slider-arrow-l {
+            left: 80px;
+        }
+        &__slider-arrow-r {
+            right: 80px;
+        }
+    }
+}

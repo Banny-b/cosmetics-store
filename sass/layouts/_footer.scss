@@ -1,0 +1,283 @@
+.footer {
+    background-color: $accent-bg;
+    padding: 250px 0 0 0; // *
+    &__logo {
+        font-family: 'Inter';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        letter-spacing: -1.12px;
+        color: $accent-color;
+        margin-bottom: 20px;
+        padding-top: 80px;
+        padding-left: 10px;
+    }
+    &__logo-2 {
+        display: none;
+    }
+    &__subsection-1 {
+        padding: 0 10px 30px 10px;
+    }
+    &__nav {
+        margin-bottom: 30px;
+    }
+    &__nav-link {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: -0.28px;
+        color: $accent-color;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__input {
+        display: block;
+        width: 164px;
+        border-radius: 44px;
+        border: 1px solid $accent-color;
+        background: transparent;
+        padding: 10px 24px;
+        margin-right: 10px;
+    }
+    ::placeholder {
+        color: rgba(122, 40, 65, 0.60);
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.49px;
+    }
+    &__input-btn {
+        border-radius: 44px;
+        border: 1px solid $accent-color;
+        background: $accent-color;
+        padding: 8px 24px;
+    }
+    &__mail-note {
+        font-family: 'Inter';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: -0.24px;
+        color: $accent-color;
+    }
+    &__line {
+        width: 280px;
+        height: 1px;
+        background: $line-bg;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10px 0 10px;
+    }
+    &__subsection-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px 10px 22px 10px;
+    }
+    &__policy-1 {
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: -0.32px;
+        color: $accent-color;
+    }
+    &__policy-2 {
+        display: none;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__social-link:not(:last-child) {
+        margin-right: 26px;
+    }
+}
+
+// For display 640px
+@media screen and (min-width: 640px) {
+    .footer {
+        padding: 250px 0 34px 0; // *
+        &__logo {
+            margin-bottom: 22px;
+            padding-top: 120px;
+        }
+        &__subsection-1 {
+            display: flex;
+            align-items: center;
+            // padding: 10px 0 30px 10px;
+        }
+        &__nav {
+            margin-bottom: 0;
+        }
+        &__nav-list {
+            display: flex;
+            justify-content: space-between;
+            width: 260px;
+            margin-right: 55px;
+            padding-bottom: 36px;
+        }
+        &__nav-link {
+            font-size: 20px;
+            letter-spacing: -0.4px;
+        }
+        &__label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        ::placeholder {
+            font-size: 20px;
+            letter-spacing: -0.7px;
+        }
+        &__line {
+            width: 600px;
+        }
+        &__subsection-2 {
+            flex-direction: row;
+            padding: 30px 10px 0 10px;
+        }
+        &__policy-1 {
+            margin-right: 230px;
+        }
+        &__social {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// For display 1366px
+@media screen and (min-width: 1366px) {
+    .footer {
+        padding: 250px 0 34px 0; // *
+        &__logo {
+            display: none;
+        }
+        &__logo-2 {
+            display: block;
+            font-family: 'Inter';
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: -1.12px;
+            color: $accent-color;
+            padding-bottom: 36px;
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &__subsection-1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 250px 40px 30px 40px;
+        }
+        &__nav-list {
+            display: flex;
+            justify-content: space-between;
+            width: 260px;
+            margin-right: 55px;
+            padding-bottom: 36px;
+        }
+        &__nav-link {
+            display: block;
+            font-size: 20px;
+            letter-spacing: -0.4px;
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &__label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__input {
+            transition: $func-transit;
+            &:hover {
+                border: 1px solid $lightdark;
+            }
+        }
+        ::placeholder {
+            font-size: 20px;
+            letter-spacing: -0.7px;
+        }
+        &__input-btn {
+            transition: $func-transit;
+            &:hover {
+                background: $lightdark;
+            }
+        }
+        &__mail-note {
+            display: block;
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+        &__line {
+            width: 1266px;
+        }
+        &__subsection-2 {
+            // justify-content: space-between;
+            flex-direction: row;
+            padding: 30px 40px 0 40px;
+        }
+        &__policy-1 {
+            margin-right: 406px;
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        &__policy-2 {
+            display: block;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: -0.32px;
+            color: $accent-color;
+            margin-right: 440px;
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        &__social {
+            margin-bottom: 0;
+        }
+        &__social-link {
+            transition: $func-transit;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+// For display 1440px
+@media screen and (min-width: 1440px) {
+    .footer {
+        &__line {
+            width: 1350px;
+        }
+    }
+}

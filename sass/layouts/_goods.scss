@@ -1,0 +1,117 @@
+.goods {
+    background-color: $accent-bg;
+    padding: 80px 0;
+    &__title {
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.64px;
+        color: $accent-color;
+        margin-bottom: 30px;
+        padding: 0 35px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item {
+        text-align: center;
+        width: 140px;
+        margin-bottom: 10px;
+    }
+    &__link-img {
+        width: 100%;
+        background-color: $second-bg;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    &__link-title {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.49px;
+        color: $accent-color;
+        margin-bottom: 5px;
+    }
+    &__link-price {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.49px;
+        color: $second-color;
+    }
+}
+
+// For display 640px
+@media screen and (min-width: 640px) {
+    .goods {
+        padding: 120px 0;
+        &__title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            margin-bottom: 40px;
+            padding: 0 96px;
+        }
+        &__item {
+            width: 300px;
+        }
+        &__link-img {
+            margin-bottom: 20px;
+        }
+        &__link-title {
+            font-size: 16px;
+            letter-spacing: -0.56px;
+            margin-bottom: 10px;
+        }
+        &__link-price {
+            font-size: 20px;
+            letter-spacing: -0.7px;
+            color: $second-color;
+        }
+    }
+}
+
+// For display 1366px
+@media screen and (min-width: 1366px) {
+    .goods {
+        padding: 150px 0;
+        &__title {
+            font-size: 64px;
+            letter-spacing: -1.28px;
+            margin-bottom: 80px;
+            padding: 0 316px;
+        }
+        &__wrapper {
+            gap: 40px;
+        }
+        &__item {
+            width: 360px;
+        }
+        &__link {
+            display: block;
+            transition: $func-transit;
+            &:hover {
+                box-shadow: 0 0 5px $dark;
+                padding: 0 0 5px 0;
+            }
+        }
+        &__link-img {
+            margin-bottom: 30px;
+        }
+        &__link-title {
+            font-size: 20px;
+            letter-spacing: -0.7px;
+            margin-bottom: 15px;
+        }
+    }
+}
