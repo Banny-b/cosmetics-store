@@ -224,6 +224,52 @@ address {
     margin-right: 40px;
   }
 }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 2;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-menu__content {
+  position: relative;
+  padding: 40px 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+}
+.mobile-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  fill: #7A2841;
+}
+.mobile-menu__list {
+  text-align: center;
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mobile-menu__link {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.7px;
+  color: #7A2841;
+}
+
 .hero {
   text-align: center;
   background-color: #F5EAD9;

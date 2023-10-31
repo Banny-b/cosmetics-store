@@ -12,41 +12,62 @@
 <body>
     <!-- Header -->
     <header class="header container">
-                <div class="wrapper">
-                    <div class="burger">
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                    </div>
-                <a class="logo link" href="#" id="top">pipette</a>
+            <div class="wrapper">
+                <div class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
                 </div>
-                <nav class="nav__menu">
-                    <div class="nav__menu-inner">
-                        <ul class="nav__menu-list list">
-                            <li class="nav__menu-item">
-                                <a class="nav__menu-item-link link" href="#">О нас</a>
-                            </li>
-                            <li class="nav__menu-item">
-                                <a class="nav__menu-item-link link" href="#">Каталог</a>
-                            </li>
-                            <li class="nav__menu-item">
-                                <a class="nav__menu-item-link link" href="#">Отзывы</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="nav__menu-img-inner">
-                    <a class="nav__menu-img-link link" href="#">
-                        <img class="nav__menu-img" src="img/top/search.png" alt="navigation icon" />
-                    </a>
-                    <a class="nav__menu-img-link link" href="#">
-                        <img class="nav__menu-img" src="img/top/heart.png" alt="navigation icon" />
-                    </a>
-                    <a class="nav__menu-img-link link" href="#">
-                        <img class="nav__menu-img" src="img/top/bag.png" alt="navigation icon" />
-                    </a>
+            <a class="logo link" href="#" id="top">pipette</a>
+            </div>
+            <nav class="nav__menu">
+                <div class="nav__menu-inner">
+                    <ul class="nav__menu-list list">
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-item-link link" href="#">О нас</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-item-link link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-item-link link" href="#">Отзывы</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <div class="nav__menu-img-inner">
+                <a class="nav__menu-img-link link" href="#">
+                    <img class="nav__menu-img" src="img/top/search.png" alt="navigation icon" />
+                </a>
+                <a class="nav__menu-img-link link" href="#">
+                    <img class="nav__menu-img" src="img/top/heart.png" alt="navigation icon" />
+                </a>
+                <a class="nav__menu-img-link link" href="#">
+                    <img class="nav__menu-img" src="img/top/bag.png" alt="navigation icon" />
+                </a>
+            </div>
     </header>
+    <!-- Mobile menu -->
+    <div class="mobile-menu container is-hidden">
+        <div class="mobile-menu__content">
+            <button class="mobile-menu__close">
+                <svg class="mobile-menu__close-img" width="24" height="24">
+                    <use href="./img/mobile-menu/close.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ui class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">О нас</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Каталог</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Отзывы</a>
+                </li>
+            </ui>
+        </div>
+    </div>
     <!-- Hero -->
     <section class="hero container">
             <h1 class="hero__title">Нежный уход за кожей для вашей семьи</h1>
@@ -213,7 +234,7 @@
             </div>
         </div>
     </section>
-
+    <script src="./js/mobileMenu.js"></script>
     <script src="./js/slider.js"></script>
 </body>
 </html>
