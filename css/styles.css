@@ -735,11 +735,13 @@ address {
   transform: translateX(-100%);
 }
 .reviews__slider-client-img {
+  border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10px;
 }
 .reviews__slider-client-text {
+  text-align: center;
   font-family: "Inter";
   font-size: 14px;
   font-style: normal;
@@ -747,13 +749,13 @@ address {
   line-height: 140%;
   letter-spacing: -0.49px;
   color: #7A2841;
-  padding: 0 22px 22px 22px;
+  padding: 0 42px 22px 42px;
 }
 
 /* Индикатор состояния слайдера */
 .indicator {
   position: absolute;
-  bottom: -252px;
+  bottom: -274px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -794,7 +796,7 @@ address {
   .reviews__slider-client-text {
     font-size: 16px;
     letter-spacing: -0.56px;
-    padding: 0 120px 24px 120px;
+    padding: 0 152px 24px 152px;
   }
   .reviews__slider {
     padding: 40px 0 0 0;
@@ -811,6 +813,9 @@ address {
   .reviews__slider-arrow-r {
     right: 15px;
   }
+  .indicator {
+    display: none;
+  }
 }
 @media (min-width: 1366px) {
   .reviews {
@@ -819,7 +824,7 @@ address {
   .reviews__title {
     font-size: 64px;
     letter-spacing: -1.28px;
-    padding: 0 280px;
+    padding: 0 278px;
   }
   .reviews__slider-client-img {
     margin-bottom: 30px;
@@ -827,7 +832,7 @@ address {
   .reviews__slider-client-text {
     font-size: 20px;
     letter-spacing: -0.7px;
-    padding: 0 270px 38px 270px;
+    padding: 0 296px 38px 296px;
   }
   .reviews__slider {
     padding: 80px 0 0 0;
