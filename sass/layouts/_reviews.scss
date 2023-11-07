@@ -17,16 +17,6 @@
         padding: 30px 0 0 0;
         text-align: center;
     }
-    &__slider-client {
-        display: block;
-        position: absolute;
-        transition: transform 0.5s ease;
-        width: 100%;
-        background-color: $accent-bg;
-        &:not(.active) {
-            transform: translateX(-100%);
-        }
-    }
     &__slider-client-img {
         border-radius: 50%;
         margin-right: auto;
@@ -46,38 +36,12 @@
     }
 }
 
-/* Индикатор состояния слайдера */
-.indicator {
-    position: absolute;
-    bottom: -274px; // *
-    left: 50%;
-    transform: translateX(-50%);
-    &-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.slick-arrow {
+    display: none !important;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $lightgray;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    &.active {
-        background-color: $accent-color;
-    }
-}
-
-// For display 640px
-@media (max-width: 639px) {
-    .reviews__slider-arrow-l,
-    .reviews__slider-arrow-r {
-        display: none;
-    }
+.slick-dots {
+    background-color: $accent-bg;
 }
 
 @media (min-width: 640px) {
@@ -96,22 +60,24 @@
         &__slider {
             padding: 40px 0 0 0;
         }
-        &__slider-arrow-l,
-        &__slider-arrow-r {
-            z-index: 1;
-            position: absolute;
-            top: 120px;
-            cursor: pointer;
-        }
-        &__slider-arrow-l {
-            left: 15px;
-        }
-        &__slider-arrow-r {
-            right: 15px;
-        }
     }
-    .indicator {
-        display: none;
+    .arrow-l {
+        position: absolute;
+        top: 190px;
+        left: 15px;
+        border: none;
+        background: transparent;
+        z-index: 2;
+    }
+    .arrow-r {
+        position: absolute;
+        top: 190px;
+        right: 15px;
+        border: none;
+        background: transparent;
+    }
+    .slick-arrow {
+        display: inline-block !important;
     }
 }
 
@@ -135,15 +101,17 @@
         &__slider {
             padding: 80px 0 0 0;
         }
-        &__slider-arrow-l,
-        &__slider-arrow-r {
-            top: 150px;
-        }
-        &__slider-arrow-l {
-            left: 80px;
-        }
-        &__slider-arrow-r {
-            right: 80px;
-        }
     }
+    .arrow-l {
+        left: 30px;
+    }
+    .arrow-r {
+        right: 30px;
+    }
+}
+
+// Отключаем дефолтные стрелки
+.slick-prev:before,
+.slick-next:before {
+    display: none;
 }

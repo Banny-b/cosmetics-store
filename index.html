@@ -8,6 +8,8 @@
     <link type="Image/x-icon" href="./img/cosmetics-icon.png" rel="icon"/>
     <title>Cosmetics store</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <!-- Header -->
@@ -165,8 +167,8 @@
     <!-- Reviews -->
     <section class="reviews container">
         <h2 class="reviews__title">Реальные отзывы от реальных клиентов</h2>
-        <div class="reviews__slider">
-            <div class="reviews__slider-client active">
+        <div class="reviews__slider slides">
+            <div class="reviews__slider-client">
                 <img class="reviews__slider-client-img" src="img/reviews/client-1.jpg" alt="client photo" width="130" height="130" />
                 <p class="reviews__slider-client-text">Я заметила значительное улучшение тона и текстуры моей кожи 
                     после использования осветляющей сыворотки в течение месяца. Кожа выглядит более здоровой и сияющей.
@@ -183,11 +185,6 @@
                 <p class="reviews__slider-client-text">Я заметила значительное улучшение тона и текстуры моей кожи 
                     после использования осветляющей сыворотки в течение месяца. Кожа выглядит более здоровой и сияющей.
                 </p>
-            </div>
-            <img class="reviews__slider-arrow-l" src="img/reviews/arr-prev.png" alt="arrow prev" />
-            <img class="reviews__slider-arrow-r" src="img/reviews/arr-next.png" alt="arrow next" />
-            <div class="indicator">
-                <span class="indicator-dots"></span>
             </div>
         </div>
     </section>
@@ -235,6 +232,9 @@
         </div>
     </section>
     <script src="./js/mobileMenu.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
 </body>
 </html>
